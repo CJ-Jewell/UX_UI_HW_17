@@ -8,8 +8,6 @@ body, h1, h2, h3, p, ul, li {
 }
 
 
-
-
 /* Whole page */
 body {
     background-color: #fff;
@@ -70,9 +68,8 @@ hero {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
-
 
 .chicago {
     font-size: 16px;
@@ -118,26 +115,48 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+
+.topicheader {
+    display: flex;
+    height: 110px;
+    width: 100%;
+    flex-direction: row;
 }
 
+.text {
+    position: relative;
+    background-image: url("../Images/Logo\ Small.png");
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    justify-content: flex-start;
+    align-items: flex-end;
 
+}
 
+.topictext {
+    font-size: 32px;
+    font-family: "Violet Sans", sans-serif;
+    margin: 20px;
+}
 
 
 
 /***** Style the footer */
 footer {
-  /*  background-color: #333; */
+ /* background-color: #333; */
     color: #161616;
     text-align: center;
     padding-top: 150px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .dome-background {
@@ -149,10 +168,9 @@ footer {
     overflow: hidden;
 }
 
-/* Style for the dome shape */
 .dome {
     position: absolute;
-    bottom: -300px; /* Half of the dome height */
+    bottom: -350px; /* Half of the dome height */
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -165,7 +183,13 @@ footer {
 }
 
 .content {
-    position: relative;
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     z-index: 1;
 }
 
@@ -197,7 +221,7 @@ footer {
     color: #f7f7f7;
 }
 
-/* Style for the copyright paragraph */
+/* copyright */
 footer p:last-child {
     margin: 0;
     font-size: 14px;
